@@ -1,0 +1,27 @@
+[
+  {
+    "source": "/test1",
+    "target": "http://localhost/target1",
+    "status": 301,
+    "headers": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "source": "/test2",
+    "target": "http://localhost/target2",
+    "status": 302,
+    "headers": {
+      "Server": "AkamaiGHost",
+      "Vary": "User-Agent"
+    }
+  },
+  {
+    "source": "/test3",
+    "target": "http://localhost/target3",
+    "status": 302,
+    "headers": {
+      "Server": "AkamaiGHost"
+    }
+  }
+]
