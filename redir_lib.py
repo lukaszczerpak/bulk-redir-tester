@@ -38,7 +38,6 @@ def checkRedirect(r, realHostname):
     headers = {'Host': hostname}
     conn.request('GET', path, None, headers)
     response = conn.getresponse()
-    internalRedir = True if response.getheader('Server') == 'AkamaiGHost' else False
 
     if response.status != redirCode:
         errors.append('Incorrect response code:\n\texpected: %d\n\tgot: %d' % (redirCode, response.status))
